@@ -6,16 +6,9 @@
 #include "times.h"
 #include "pixel.h"
 
-const String LIGHTHOUSE_VERSION = "1.0.1";
+const String LIGHTHOUSE_VERSION = "1.0.2";
 
 const int NETWORK_FAIL = 1;
-
-const int STARTUP = 1;
-const int DEEPSLEEP = 2;
-const int WIFI = 3;
-const int OTA = 4;
-const int NTP = 5;
-const int CONNECTION = 6;
 
 Times ntp;
 OTAUpdate ota;
