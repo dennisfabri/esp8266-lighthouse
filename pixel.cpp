@@ -52,12 +52,12 @@ void Pixel::setPixels(int pixel, int colorDown, int colorUp) {
 }
 
 void Pixel::rotate() {
-  for (int pixel = 0; pixel < NUM_LEDS / 2; pixel++) {
+  for (int pixel = 0; pixel < NUM_LEDS; pixel++) {
     for (int step = 0; step < valueCount; step++) {
       setPixels(pixel, colorsDown[step], colorsUp[step]);
-      setPixels((pixel + NUM_LEDS / 2) % NUM_LEDS, colorsDown[step], colorsUp[step]);
+      // setPixels((pixel + NUM_LEDS / 2) % NUM_LEDS, colorsDown[step], colorsUp[step]);
       showStrip();
-      delay(5);
+      delay(3);
     }
   }
 }

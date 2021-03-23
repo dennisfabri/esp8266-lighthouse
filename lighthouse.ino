@@ -41,7 +41,6 @@ void setup() {
   if (!ntp.isNight()) {
     pixel.reset();
     pixel.animate();
-    pixel.animate();
   }
   pixel.reset();
 }
